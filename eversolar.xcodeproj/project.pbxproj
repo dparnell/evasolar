@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6581428C17F64F7A0030DBF3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6581428B17F64F7A0030DBF3 /* main.c */; };
 		6581428E17F64F7A0030DBF3 /* eversolar.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6581428D17F64F7A0030DBF3 /* eversolar.1 */; };
+		6581429617F651360030DBF3 /* eth2ser.c in Sources */ = {isa = PBXBuildFile; fileRef = 6581429517F651360030DBF3 /* eth2ser.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		6581428817F64F7A0030DBF3 /* eversolar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = eversolar; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581428B17F64F7A0030DBF3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6581428D17F64F7A0030DBF3 /* eversolar.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = eversolar.1; sourceTree = "<group>"; };
+		6581429417F650310030DBF3 /* eversolar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eversolar.h; sourceTree = "<group>"; };
+		6581429517F651360030DBF3 /* eth2ser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = eth2ser.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			children = (
 				6581428B17F64F7A0030DBF3 /* main.c */,
 				6581428D17F64F7A0030DBF3 /* eversolar.1 */,
+				6581429417F650310030DBF3 /* eversolar.h */,
+				6581429517F651360030DBF3 /* eth2ser.c */,
 			);
 			path = eversolar;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6581428C17F64F7A0030DBF3 /* main.c in Sources */,
+				6581429617F651360030DBF3 /* eth2ser.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
