@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		6581428C17F64F7A0030DBF3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6581428B17F64F7A0030DBF3 /* main.c */; };
 		6581428E17F64F7A0030DBF3 /* eversolar.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6581428D17F64F7A0030DBF3 /* eversolar.1 */; };
-		6581429617F651360030DBF3 /* eth2ser.c in Sources */ = {isa = PBXBuildFile; fileRef = 6581429517F651360030DBF3 /* eth2ser.c */; };
+		6581429617F651360030DBF3 /* connectors.c in Sources */ = {isa = PBXBuildFile; fileRef = 6581429517F651360030DBF3 /* connectors.c */; };
+		6581429817F7B2C60030DBF3 /* commands.c in Sources */ = {isa = PBXBuildFile; fileRef = 6581429717F7B2C60030DBF3 /* commands.c */; };
+		6581429A17F7B4D40030DBF3 /* packets.c in Sources */ = {isa = PBXBuildFile; fileRef = 6581429917F7B4D40030DBF3 /* packets.c */; };
+		6581429C17F7C3810030DBF3 /* inverters.c in Sources */ = {isa = PBXBuildFile; fileRef = 6581429B17F7C3810030DBF3 /* inverters.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +33,10 @@
 		6581428B17F64F7A0030DBF3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6581428D17F64F7A0030DBF3 /* eversolar.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = eversolar.1; sourceTree = "<group>"; };
 		6581429417F650310030DBF3 /* eversolar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eversolar.h; sourceTree = "<group>"; };
-		6581429517F651360030DBF3 /* eth2ser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = eth2ser.c; sourceTree = "<group>"; };
+		6581429517F651360030DBF3 /* connectors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = connectors.c; sourceTree = "<group>"; };
+		6581429717F7B2C60030DBF3 /* commands.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commands.c; sourceTree = "<group>"; };
+		6581429917F7B4D40030DBF3 /* packets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = packets.c; sourceTree = "<group>"; };
+		6581429B17F7C3810030DBF3 /* inverters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inverters.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +72,10 @@
 				6581428B17F64F7A0030DBF3 /* main.c */,
 				6581428D17F64F7A0030DBF3 /* eversolar.1 */,
 				6581429417F650310030DBF3 /* eversolar.h */,
-				6581429517F651360030DBF3 /* eth2ser.c */,
+				6581429517F651360030DBF3 /* connectors.c */,
+				6581429717F7B2C60030DBF3 /* commands.c */,
+				6581429917F7B4D40030DBF3 /* packets.c */,
+				6581429B17F7C3810030DBF3 /* inverters.c */,
 			);
 			path = eversolar;
 			sourceTree = "<group>";
@@ -123,7 +132,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6581428C17F64F7A0030DBF3 /* main.c in Sources */,
-				6581429617F651360030DBF3 /* eth2ser.c in Sources */,
+				6581429C17F7C3810030DBF3 /* inverters.c in Sources */,
+				6581429A17F7B4D40030DBF3 /* packets.c in Sources */,
+				6581429617F651360030DBF3 /* connectors.c in Sources */,
+				6581429817F7B2C60030DBF3 /* commands.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +243,7 @@
 				6581429317F64F7A0030DBF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

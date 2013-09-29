@@ -76,7 +76,7 @@ static int eth2ser_send_request(void* state, const unsigned char* to_send, int s
     if(send(socket, to_send, send_size, 0) < 0) {
         warn("send failed");
         
-        return 0;
+        return -2;
     } else {
         // read all available bytes until we get a time out
         ssize_t count = 0;
@@ -98,9 +98,15 @@ static void eth2ser_disconnect(void* state) {
     shutdown(((Eth2SerState*)state)->socket, SHUT_RDWR);
 }
 
-Connector eth2ser_connector = {
+static Connector eth2ser_connector = {
     eth2ser_can_handle,
     eth2ser_connect,
     eth2ser_send_request,
     eth2ser_disconnect
+};
+
+
+Connector* connectors[] = {
+    &eth2ser_connector,
+    NULL
 };
