@@ -58,7 +58,7 @@ static void* eth2ser_connect(const char* dest) {
                 setsockopt(s, SOL_SOCKET, SO_RCVTIMEO, (char *)&tv,sizeof(struct timeval));
                 setsockopt(s, SOL_SOCKET, SO_SNDTIMEO, (char *)&tv,sizeof(struct timeval));
                 
-                state = malloc(sizeof(Eth2SerState));
+                state = (Eth2SerState*)malloc(sizeof(Eth2SerState));
                 state->socket = s;
             } else {
                 warn("connection to '%s' on port '%s' failed", host, port);

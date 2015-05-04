@@ -37,7 +37,7 @@ int send_request(Connector* connector, void* state, const unsigned char* buffer,
 
 
 typedef struct Command {
-    char* name;
+    const char* name;
     int (*execute)(Connector* connector, void* state, const char** params);
 } Command;
 
