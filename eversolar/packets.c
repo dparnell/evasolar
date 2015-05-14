@@ -44,13 +44,17 @@ int build_packet(unsigned char source_address, unsigned char dest_address, unsig
 }
 
 char packet_is_valid(unsigned char *buffer, int size) {
-    unsigned short checksum = 0;
+    if(size > 3) {
+        unsigned short checksum = 0;
     
-    for(int i=0; i<size-2; i++) {
-        checksum += buffer[i];
+        for(int i=0; i<size-2; i++) {
+            checksum += buffer[i];
+        }
+    
+        return checksum == ((buffer[size-2] << 8) | buffer[size-1]);
     }
-    
-    return checksum == ((buffer[size-2] << 8) | buffer[size-1]);
+
+    return false;
 }
 
 void dump_hex(const unsigned char* buffer, int size) {
